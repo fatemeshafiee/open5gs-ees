@@ -1,5 +1,9 @@
 .DS_Store
+.idea/.gitignore
+.idea/misc.xml
+.idea/vcs.xml
 README.md
+dif.txt
 lib/core/ogs-log.h
 lib/diameter/common/meson.build
 meson.build
@@ -22,6 +26,10 @@ src/upf/cvector.h
 src/upf/cvector_utils.h
 src/upf/decoder.c
 src/upf/decoder.h
+src/upf/delta_queue.c
+src/upf/delta_queue.h
+src/upf/destroy_message.c
+src/upf/destroy_message.h
 src/upf/ee_client.c
 src/upf/ee_client.h
 src/upf/ee_event.h
@@ -35,6 +43,7 @@ src/upf/handler.h
 src/upf/init.c
 src/upf/manage_collection.h
 src/upf/meson.build
+src/upf/message_store.h
 src/upf/publish_report.c
 src/upf/publish_report.h
 src/upf/publish_subscribe.c
