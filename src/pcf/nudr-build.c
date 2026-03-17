@@ -45,6 +45,7 @@ ogs_sbi_request_t *pcf_nudr_dr_build_query_am_data(
 ogs_sbi_request_t *pcf_nudr_dr_build_query_sm_data(
         pcf_sess_t *sess, void *data)
 {
+  // [Fatemeh] requesting data from udr
     pcf_ue_t *pcf_ue = NULL;
 
     ogs_sbi_message_t message;

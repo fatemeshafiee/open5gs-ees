@@ -1106,6 +1106,7 @@ bool pcf_npcf_policyauthorization_handle_update(
         pcf_sess_t *sess, pcf_app_t *app_session,
         ogs_sbi_stream_t *stream, ogs_sbi_message_t *recvmsg)
 {
+    // [Fatemeh] updating rules.
     int i, j, rv, status = 0;
     char *strerror = NULL;
     pcf_ue_t *pcf_ue = NULL;

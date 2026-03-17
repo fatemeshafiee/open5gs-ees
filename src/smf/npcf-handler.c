@@ -27,6 +27,7 @@
 static void update_authorized_pcc_rule_and_qos(
         smf_sess_t *sess, OpenAPI_sm_policy_decision_t *SmPolicyDecision)
 {
+    // [Fatemeh]
     OpenAPI_lnode_t *node = NULL, *node2 = NULL;
 
     ogs_assert(sess);
@@ -649,6 +650,7 @@ bool smf_npcf_smpolicycontrol_handle_create(
 bool smf_npcf_smpolicycontrol_handle_update_notify(
         smf_sess_t *sess, ogs_sbi_stream_t *stream, ogs_sbi_message_t *recvmsg)
 {
+  // to handel update based on pcf notification.
     char *strerror = NULL;
     smf_ue_t *smf_ue = NULL;
 
@@ -677,6 +679,7 @@ bool smf_npcf_smpolicycontrol_handle_update_notify(
     }
 
     /* Update authorized PCC rule & QoS */
+    // [Fatemeh] handeling update.
     update_authorized_pcc_rule_and_qos(sess, SmPolicyDecision);
 
     ogs_assert(true == ogs_sbi_send_http_status_no_content(stream));

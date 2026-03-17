@@ -65,5 +65,5 @@ Checks: '*,
   -hicpp-signed-bitwise,
   '
 
-WarningsAsErrors: false
+WarningsAsErrors: "false"
 HeaderFilterRegex: '(.*\.h)'

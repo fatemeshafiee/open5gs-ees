@@ -465,7 +465,7 @@ int ogs_check_qos_conf(ogs_qos_t *qos);
 typedef struct ogs_flow_s {
     uint8_t direction;
     char *description;
-} ogs_flow_t;
+}  ogs_flow_t;
 
 #define OGS_FLOW_FREE(__fLOW) \
     do { \

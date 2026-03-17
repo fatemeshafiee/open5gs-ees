@@ -22,6 +22,7 @@
 ogs_sbi_request_t *pcf_nsmf_callback_build_smpolicycontrol_update(
         pcf_sess_t *sess, void *data)
 {
+// [Fatemeh] to update the PCC rules.
     ogs_sbi_message_t message;
     ogs_sbi_header_t header;
     ogs_sbi_request_t *request = NULL;

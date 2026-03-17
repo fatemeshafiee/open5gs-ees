@@ -297,6 +297,7 @@ bool pcf_sbi_send_am_policy_control_notify(pcf_ue_t *pcf_ue)
 bool pcf_sbi_send_smpolicycontrol_update_notify(
         pcf_sess_t *sess, OpenAPI_sm_policy_decision_t *SmPolicyDecision)
 {
+  // [Fatemeh] updating the pcc rules
     bool rc;
     ogs_sbi_request_t *request = NULL;
     ogs_sbi_client_t *client = NULL;
